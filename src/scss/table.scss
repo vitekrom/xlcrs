@@ -47,26 +47,27 @@
   }
 
   .cell {
-      position: relative;
-      min-width: 40px;
-      padding: 5px;
-      width: $cell-width;
-      height: 100%;
-      border: 1px solid #e2e3e3;
-      border-top: 0;
-      border-left: 0;
-      color: #111;
-      white-space: nowrap;
-      outline: none;
+    position: relative;
+    min-width: 40px;
+    padding: 5px;
+    width: $cell-width;
+    height: 100%;
+    border: 1px solid #e2e3e3;
+    border-top: 0;
+    border-left: 0;
+    color: #111;
+    white-space: nowrap;
+    outline: none;
 
     &.selected {
-        border: none;
-        outline: 2px solid $primary-color;
-        z-index: 2;
+      border: none;
+      outline: 2px solid $primary-color;
+      z-index: 2;
     }
   }
 
-  .col-resize, .row-resize {
+  .col-resize,
+  .row-resize {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -75,7 +76,7 @@
     z-index: 1000;
 
     &:hover {
-      opacity: 1!important;
+      opacity: 1 !important;
     }
   }
   .col-resize {
