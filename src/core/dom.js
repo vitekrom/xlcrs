@@ -13,7 +13,7 @@ class Dom {
     return this.$el.outerHTML.trim()
   }
   text(text) {
-    if (typeof text !== 'undefined') {
+    if (typeof text === 'string' || typeof text === 'number') {
       this.$el.textContent = text
       return this
     }
